@@ -1,0 +1,23 @@
+//
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+}
+
+
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+
+    repositories {
+        jcenter()
+        mavenLocal()
+    }
+
+    sourceCompatibility = '1.8'
+
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+}

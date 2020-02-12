@@ -4,3 +4,5 @@
 /gradle/
 /gradlew
 /gradlew.bat
+/workforce-contract/build/
+/workforce-service/build/

@@ -1,0 +1,4 @@
+rootProject.name = 'workforce'
+include 'workforce-service'
+include 'workforce-contract'
+
