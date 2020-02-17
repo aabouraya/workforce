@@ -1,0 +1,2 @@
+INSERT INTO WORK_SPECIFICATION_TYPES  (ID, NAME) VALUES (1,'Testing');
+INSERT INTO WORK_SPECIFICATIONS (ID, Description, NAME,standard_duration, standard_capacity_required, work_specification_type_id) VALUES (1, 'empty description', 'GPON Installation', 120, 10, 1);
