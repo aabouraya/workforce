@@ -31,6 +31,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'mysql:mysql-connector-java'
+    runtimeOnly(group: 'com.h2database', name: 'h2', version: h2_version)
     annotationProcessor 'org.projectlombok:lombok'
     annotationProcessor(group: 'org.mapstruct', name: 'mapstruct-processor', version: mapstruct_version)
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
