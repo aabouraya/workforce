@@ -25,6 +25,4 @@ public class SkillSpecification {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @ManyToMany
-    private Set<WorkSpecification> workSpecificationSet;
 }
