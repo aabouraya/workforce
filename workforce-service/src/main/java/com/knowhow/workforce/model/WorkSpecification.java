@@ -43,4 +43,9 @@ public class WorkSpecification {
     @ManyToMany
     @JoinTable(name = "work_specifications_skills", joinColumns = @JoinColumn(name = "work_specification_id"), inverseJoinColumns = @JoinColumn(name = "skill_specification_id"))
     private Set<SkillSpecification> skills;
+
+
+    @ManyToOne
+    @JoinColumn(name = "work_specification_cost_id")
+    private WorkSpecificationCost cost;
 }
