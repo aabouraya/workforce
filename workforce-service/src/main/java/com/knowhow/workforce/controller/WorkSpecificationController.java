@@ -1,6 +1,6 @@
 package com.knowhow.workforce.controller;
 
-import com.knowhow.workforce.WorkSpecificationDto;
+import com.knowhow.workforce.contract.WorkSpecificationRequest;
 import com.knowhow.workforce.service.WorkSpecificationService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -17,7 +17,7 @@ public class WorkSpecificationController {
     private final WorkSpecificationService workSpecificationService;
 
     @GetMapping
-    public List<WorkSpecificationDto> get() {
+    public List<WorkSpecificationRequest> get() {
         return workSpecificationService.getAll();
     }
 }

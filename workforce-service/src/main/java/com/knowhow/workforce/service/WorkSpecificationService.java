@@ -1,10 +1,10 @@
 package com.knowhow.workforce.service;
 
 
-import com.knowhow.workforce.WorkSpecificationDto;
+import com.knowhow.workforce.contract.WorkSpecificationRequest;
 import java.util.List;
 
 public interface WorkSpecificationService {
 
-    List<WorkSpecificationDto> getAll();
+    List<WorkSpecificationRequest> getAll();
 }
